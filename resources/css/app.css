@@ -1,0 +1,49 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@layer components {
+    .form-container {
+        @apply flex items-center justify-center h-screen;
+    }
+
+    .form {
+        @apply w-full max-w-sm bg-white shadow-md rounded px-8 pt-6 pb-8;
+    }
+
+    .form-label {
+        @apply block text-gray-500 font-bold mb-1 pr-4;
+    }
+
+    .form-error-status-message {
+        @apply bg-red-100 border border-red-400 text-red-700 px-4 py-3 mt-2 mb-2 rounded relative;
+    }
+
+    .form-input-row {
+        @apply flex items-center mb-6;
+    }
+
+    .form-input-error-label {
+        @apply text-red-500 text-xs italic mt-2;
+    }
+
+    .form-input {
+        @apply appearance-none border-2 rounded w-full py-2 px-4 text-gray-700 leading-tight border-gray-200;
+    }
+
+    .form-input:focus {
+        @apply bg-white border-teal-500 outline-none;
+    }
+
+    .btn {
+        @apply shadow bg-teal-500 text-white font-bold py-2 px-4 rounded;
+    }
+
+    .btn:hover {
+        @apply bg-teal-400
+    }
+
+    .btn:focus {
+        @apply shadow-outline outline-none;
+    }
+}
