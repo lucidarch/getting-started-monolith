@@ -22,9 +22,9 @@ class CalculateIngredientsTotalJob extends Job
     /**
      * Execute the job.
      *
-     * @return void
+     * @return float
      */
-    public function handle()
+    public function handle(): float
     {
         return $this->ingredients->sum('total');
     }

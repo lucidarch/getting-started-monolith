@@ -35,9 +35,9 @@ class SaveRecipeJob extends Job
     /**
      * Execute the job.
      *
-     * @return void
+     * @return Recipe
      */
-    public function handle()
+    public function handle(): Recipe
     {
         $attributes = [
             'title' => $this->title,
